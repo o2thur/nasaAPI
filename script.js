@@ -1,4 +1,5 @@
-// 1. Getting today's date 2. Transforming into the string '2023-11-23T12:34:56.789Z' 3. Splitting on 'T' and creating array 4. Getting the first string
+// 1. Getting today's date 2. Transforming into the string '2023-11-23T12:34:56.789Z' 
+// 3. Splitting on 'T' and creating array 4. Getting the first string
 const today = new Date().toISOString().split("T")[0];
 // Setting the 'max' attribute with const today as it's value
 document.getElementById("galaxy-date").setAttribute("max", today);
@@ -50,8 +51,6 @@ function addFavorites(data) {
   localStorage.setItem("favoriteImages", JSON.stringify(favoriteImages))
   renderFavorites()
 }
-
-
 
 function renderFavorites() {
   $favoriteImagesContainer.innerHTML = ''

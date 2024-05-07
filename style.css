@@ -1,13 +1,33 @@
 body {
-    font-family: sans-serif;
-    margin: 0
+    font-family: 'Montserrat', sans-serif;
+    margin: 0 5rem;
+    background-color: #1E1E1E;
+    color: #fafafa;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+}
+
+#stars {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    height: 1px;
+    width: 1px;
+    background-color: #fff;
+    border-radius: 50%;
+    box-shadow: -24vw -44vh 2px 2px #fff, 38vw -4vh 0px 0px #fff, -20vw -48vh 1px 2px #fff, -39vw 38vh 3px 1px #fff, -42vw -11vh 0px 3px #fff, 12vw 15vh 3px 3px #fff, 42vw 6vh 3px 2px #fff, -8vw 9vh 0px 2px #fff, 34vw -38vh 1px 0px #fff, -17vw 45vh 3px 1px #fff, 22vw -36vh 3px 2px #fff, -42vw 1vh 1px 0px #fff;
+    animation: zoom 10s alternate infinite;
+    z-index: -1;
 }
 
 .d-none {
     display: none;
 }
 
-form {
+#selectContainer {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -23,22 +43,37 @@ input[type="date"] {
 
 #container {
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     justify-content: center;
     align-items: center;
     margin-top: 20px;
     padding-bottom: 15px;
 }
 
+#image-container {
+    text-align: center;
+}
+
+#image-desc-container {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+/* #image-explanation {
+    width: 70%
+} */
+
 #container img {
-    /* Make the image responsive */
+    /* Makes the image responsive */
     max-height: 400px;
+    max-width: 800px;
     /* Set a maximum height for the image */
     border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
 }
 
 #container div {
-    text-align: center;
     width: 50%;
 }
 
@@ -59,16 +94,16 @@ input[type="date"] {
     display: flex;
     flex-direction: column;
     align-items: center;
-    border: 1px #ccc solid;
     padding: 15px;
     border-radius: 8px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
 }
 
 .card h3 {
     margin-bottom: 10px;
     font-size: 1.2rem;
-    color: #333;
+    color: #fff;
+    font-weight: 500;
 }
 
 .card-image {
@@ -80,7 +115,8 @@ input[type="date"] {
 
 .card button,
 input[type='button'] {
-    background-color: #e74c3c;
+    background-color: #CE6464;
+    font-family: 'Montserrat', sans-serif;
     color: #fff;
     border: none;
     padding: 8px 12px;
@@ -93,5 +129,5 @@ input[type='button'] {
 
 .card button:hover,
 input[type='button']:hover {
-    background-color: #c0392b;
+    background-color: #f08f8f;
 }

@@ -6,34 +6,47 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <script src="script.js" defer></script>
   <link rel="stylesheet" href="style.css" />
-  <title>Home</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+    rel="stylesheet">
+  <title>Nasa API Project</title>
+  <link rel="icon" type="image/png" href="favicon.ico">
+
 </head>
 
 <body>
-  <form action="">
-    <h1>Select a date for the image of that respective day:</h1>
-    <input type="date" id="galaxy-date" name="galaxy-date" />
-    <input type="button" value="See the image" id="submit-button" />
-  </form>
-
-  <div id="container" class="d-none">
-    <div>
-      <h1 id="image-title"></h1>
-      <a href="" id="image-link"><img src="" alt="" id="galaxy-image" /></a>
-    </div>
-    <div>
-      <p id="image-explanation"></p>
-      <input type="button" value="Add to favorites" id="favorite-button" class="d-none" />
-    </div>
-  </div>
-
-  <div id="favoritesContainer">
-    <h1>Your favorite images:</h1>
-    <div id="favoriteImagesContainer">
-
+  <main>
+    <div id="stars"></div>
+    <div id="container" class="d-none">
+      <div id="image-container">
+        <a href="" id="image-link"><img src="" alt="" id="galaxy-image" /></a>
+      </div>
+      <div id="image-desc-container">
+        <h1 id="image-title"></h1>
+        <p id="image-explanation"></p>
+        <input type="button" value="Add to favorites" id="favorite-button" class="d-none" />
+      </div>
     </div>
 
-  </div>
+    <div id="selectContainer">
+      <h1>Choose a date to start:</h1>
+      <div>
+        <input type="date" id="galaxy-date" name="galaxy-date" />
+        <input type="button" value="See the image" id="submit-button" />
+      </div>
+    </div>
+
+
+    <div id="favoritesContainer">
+      <h1></h1>
+      <div id="favoriteImagesContainer">
+
+      </div>
+
+    </div>
+
+  </main>
 </body>
 
 </html>
